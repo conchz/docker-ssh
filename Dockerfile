@@ -21,6 +21,6 @@ RUN yum install -y python-setuptools
 RUN easy_install -i http://mirrors.aliyun.com/pypi/simple/ pip
 RUN pip install supervisor
 
-EXPOSE 22 80
+EXPOSE 22 27017 28017
 CMD ["/usr/sbin/sshd", "-D"]
 
